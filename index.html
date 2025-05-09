@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programme d'immigration Canada</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f0f4f8; margin: 0; padding: 0; }
+    header { background-color: #d52b1e; color: white; padding: 1em; text-align: center; }
+    nav a { margin: 0 10px; color: white; text-decoration: none; }
+    section { padding: 2em; max-width: 800px; margin: auto; }
+    h1, h2, h3, h4 { color: #d52b1e; }
+    ul { list-style: disc; margin-left: 2em; }
+    form { display: flex; flex-direction: column; gap: 1em; }
+    input, textarea, button { padding: 0.8em; font-size: 1em; }
+    button { background-color: #d52b1e; color: white; border: none; cursor: pointer; }
+    button:hover { background-color: #b2221a; }
+    .blog-post { margin-bottom: 2em; background: white; padding: 1em; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+  </style>
+  <script>
+    function submitApplication(event) {
+      event.preventDefault();
+      alert("Votre candidature a été envoyée avec succès !");
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Programme d'immigration Canada</h1>
+    <nav>
+      <a href="#blog">Blog</a>
+      <a href="#candidature">Candidature</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="blog">
+    <h2>Notre Blog</h2>
+    <div class="blog-post">
+      <h3>Travaillez au Canada – Recrutement Ouvert !</h3>
+      <p>Le gouvernement canadien, en partenariat avec de nombreuses entreprises locales, lance une vaste campagne de recrutement pour combler un important manque de main-d'œuvre dans plusieurs secteurs d’activité.</p>
+      <p>Vous êtes motivé(e), qualifié(e) et prêt(e) à bâtir votre avenir au Canada ? Voici une occasion unique de décrocher un contrat de travail avec hébergement, assurance médicale et billet d’avion pris en charge par l’employeur !</p>
+      <h4>Profils recherchés :</h4>
+      <ul>
+        <li>Médecins généralistes et spécialistes</li>
+        <li>Infirmiers cliniciens et sages-femmes</li>
+        <li>Ingénieurs (civil, chimie, industrie, électricité, aérospatiale, logiciel)</li>
+        <li>Mécaniciens, soudeurs, monteurs d’aéronefs</li>
+        <li>Techniciens en informatique et en réseau</li>
+        <li>Pompiers, pilotes, navigateurs, instructeurs</li>
+        <li>Optométristes, physiothérapeutes, psychologues, pharmaciens</li>
+        <li>Huissiers, ouvriers agricoles, manœuvres</li>
+        <li>Professionnels en marketing, publicité et relations publiques</li>
+        <li>Serveurs, aides de cuisine, personnel de soutien</li>
+        <li>Tailleurs, couturiers, fourreurs et modistes</li>
+        <li>...et bien d'autres métiers en forte demande !</li>
+      </ul>
+      <h4>Pourquoi cette opportunité ?</h4>
+      <p>Le Canada fait face à une pénurie de main-d’œuvre et souhaite accueillir des talents venus d’ailleurs. En tant que partenaire, nous vous accompagnons à chaque étape pour maximiser vos chances d'obtenir un contrat.</p>
+      <p><strong>Ce que vous prenez en charge :</strong> Seulement vos frais d'inscription. Le reste est couvert par l’entreprise qui vous recrute !</p>
+      <p><a href="#candidature"><button>Postuler maintenant</button></a></p>
+    </div>
+  </section>
+
+  <section id="candidature">
+    <h2>Postulez pour travailler au Canada</h2>
+    <form onsubmit="submitApplication(event)">
+      <input type="text" id="name" placeholder="Nom complet" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="text" id="profession" placeholder="Profession" required>
+      <textarea id="coverLetter" placeholder="Lettre de motivation" required></textarea>
+      <button type="submit">Envoyer la candidature</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Pour toute question ou demande d'information, veuillez nous écrire à <strong>contact@programmedimmigration.com</strong>.</p>
+  </section>
+</body>
+</html>
